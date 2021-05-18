@@ -1,37 +1,51 @@
 html {
-    background-color: #222;
+    background: #222;
+    color: #000;
+    font-family: Sans-Serif;
 }
 #nobat {
     position: fixed;
     width: 10px;
     height: 10px;
+    border: 1px solid #fff;
     transition: background-color .5s;
 }
 .container {
     display: grid;
-    background: #b17300;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-columns: 4% 12% 12% 12% 12% 12% 12% 12% 12%;
+    grid-template-rows: 4% 12% 12% 12% 12% 12% 12% 12% 12%;
     box-sizing: border-box;
+    background: #ffa500;
+    padding: 2mm;
+    border-radius: 7%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.colums {
+    text-align: center;
+    transform: translateY(-1mm);
+}
+.row {
+    text-align: center;
+    padding: 90% 0;
+}
 .block {
     border: 2px solid #ffa500;
     box-sizing: border-box;
+    background: #b17300;
+    border-radius: 100%;
     transition: background-color .5s;
 }
 @media screen and (orientation:portrait) {
     .container {
-        width: 100%;
-        height: 100%;
+        width: 96%;
     }
 }
 @media screen and (orientation:landscape) {
     .container {
-        width: auto;
-        height: 96vh;
+        height: 96%;
     }
 }
 .white {
