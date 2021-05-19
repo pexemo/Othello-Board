@@ -69,12 +69,14 @@ html {
 }
 @media screen and (orientation:portrait) {
     #container {
-        width: 96%;
+        width: 96vw;
+        height: 96vw;
     }
 }
 @media screen and (orientation:landscape) {
     #container {
-        height: 96%;
+        width: 96vh;
+        height: 96vh;
     }
 }
 .white {
